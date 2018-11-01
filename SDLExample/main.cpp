@@ -32,7 +32,7 @@
 //Texture map with floor casting
 #include "TextureSpriteMap.h"
 //Load PNG textures
-#define USEPNG 1
+#define USEPNG 0
 //Sprites and stuff
 #include "SpritesConstants.h"
 
@@ -201,19 +201,19 @@ void generateTextures()
     }
     else {
         unsigned long tw, th, error = 0;
-        error |= loadImage(texture[0], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/eagle.png");
-        error |= loadImage(texture[1], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/redbrick.png");
-        error |= loadImage(texture[2], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/purplestone.png");
-        error |= loadImage(texture[3], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/greystone.png");
-        error |= loadImage(texture[4], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/bluestone.png");
-        error |= loadImage(texture[5], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/mossy.png");
-        error |= loadImage(texture[6], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/wood.png");
-        error |= loadImage(texture[7], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/colorstone.png");
+        error |= loadImage(texture[0], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExample/pics/eagle.png");
+        error |= loadImage(texture[1], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExample/pics/redbrick.png");
+        error |= loadImage(texture[2], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExample/pics/purplestone.png");
+        error |= loadImage(texture[3], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExample/pics/greystone.png");
+        error |= loadImage(texture[4], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExample/pics/bluestone.png");
+        error |= loadImage(texture[5], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExample/pics/mossy.png");
+        error |= loadImage(texture[6], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExample/pics/wood.png");
+        error |= loadImage(texture[7], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExample/pics/colorstone.png");
         
 #ifdef SPRITES
-        error |= loadImage(texture2[0], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/barrel.png");
-        error |= loadImage(texture2[1], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/pillar.png");
-        error |= loadImage(texture2[2], tw, th, "/Users/werewolf2188/Proyectos/Mobile/SDLExample/SDLExample/pics/greenlight.png");
+        error |= loadImage(texture2[0], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExamplepics/barrel.png");
+        error |= loadImage(texture2[1], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExample/pics/pillar.png");
+        error |= loadImage(texture2[2], tw, th, "~/American_Airlines/Playgrounds/Raycasting3D/SDLExample/pics/greenlight.png");
 #endif
         
         if(error) { std::cout << "error loading images" << std::endl; exit(1); }

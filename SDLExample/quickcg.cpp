@@ -40,7 +40,7 @@ QuickCG can handle some things that standard C++ doesn't but that are commonly u
 
 #include "quickcg.h"
 
-#include <SDL2/SDL.h>
+#include "../include/SDL2/SDL.h"
 #include <cstdlib>
 #include <cmath>
 #include <vector>

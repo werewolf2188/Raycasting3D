@@ -47,7 +47,7 @@ Account: lode dot vandevenne.
 #ifndef _quickcg_h_included
 #define _quickcg_h_included
 
-#include <SDL2/SDL.h>
+#include "../include/SDL2/SDL.h"
 
 #include <string>
 #include <sstream>
